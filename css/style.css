@@ -1,0 +1,131 @@
+::selection {
+    background-color: #febe2e;
+    opacity: 0.2;
+    color: black;
+}
+
+body {
+    background-color: #F7ECDE;
+}
+
+.head {
+    border-bottom: 2px dotted black;
+    text-align: center;
+    margin: auto;
+
+}
+
+.head h1 {
+    font-size: 50px;
+    font-family: "Pacifico";
+    color: #352e28;
+    width: fit-content;
+    z-index: 1;
+    position: relative;
+    margin: auto;
+}
+
+.trans::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+    left: 0;
+    height: 20px;
+    background-color: #FEC260;
+    z-index: -1;
+    transition: height 0.5s;
+}
+
+.trans:hover::before {
+    height: 40px;
+}
+
+.bookmark-titel {
+
+    border-bottom: 2px dotted black;
+}
+
+.bookmark-titel h2 {
+    font-family: "Righteous";
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    color: transparent;
+    font-size: 25px;
+}
+
+.form-control:focus {
+    border-color: #FEC260;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(255, 157, 0, 0.25);
+}
+
+#edit-btn {
+    display: none;
+}
+
+.btn-cancel {
+    display: none;
+
+}
+
+.box-conent {
+    width: 500px;
+    z-index: 10;
+}
+
+.modal {
+    --bs-modal-header-border-width: none;
+    --bs-modal-footer-border-width: none;
+}
+
+.modal-footer {
+    justify-content: flex-start;
+}
+
+.m-b-p {
+    font-size: 21px;
+    font-weight: 400;
+    font-family: "Bree", Serif;
+}
+
+.modal-body {
+    padding: 1rem 1rem 0 1rem;
+}
+
+.circles span {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.c1 {
+    background-color: #f15f5d;
+
+}
+
+.c2 {
+    background-color: #febe2e;
+
+}
+
+.c3 {
+    background-color: #4db748;
+
+}
+
+ol li {
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+.modaltest {
+    background-color: rgba(0, 0, 0, 0.512);
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
